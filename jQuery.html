@@ -1,11 +1,12 @@
-<!Doctype = html>
+<!DOCTYPE html>
 <html>
-    <head>
+    <head><meta charset="utf-8">
+        <title>JQuery Tester</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     </head>
     <script>
-    $(document).ready(function() {
-        //once page is loaded do following function:
+    $( document ).ready(function() {
+        //once page is loaded following function:
          //include the backslash to tell it to continue the line and not end the JS command--\
         $("html").append(
             "<body>\
@@ -20,6 +21,7 @@
         );
         $("p").css({"color":"red"});
         $("#p2").css({"color":"blue"});
+        $("body").css({backgroundcolor:"black"});
         //# - targets an ID
         //$ - or jQuery. which is considered dated.
         //End of the day jquery is just shortened syntax to pull already written code instead of re-writing it.
